@@ -1,0 +1,36 @@
+/*
+ Theme Name:  Child Theme for Hospice Volunteers of Hancock County
+ Description:  Divi Child Theme
+ Template:     Divi
+ Version:      1.0.0
+*/
+
+/*****Add any custom CSS below this line*****/
+
+@import "partials/colors";
+@import "partials/basics";
+
+#main-header {
+  background-image: url('images/header-bkg.jpg');
+  background-size: cover;
+  #logo {
+    background-image: radial-gradient(circle at center,#ffffff 0%,rgba(255,255,255,0) 100%);
+  }
+}
+
+#footer-bottom {
+  #footer-info {
+    .reach-customer-copyright {
+      float: left;
+    }
+    .reach-branding{
+      float: right;
+      a:before {
+        content: url('images/reach-favicon.png');
+        padding-right: 4px;
+      }
+    }
+  }
+}
+
+@import "partials/media"; // keep at bottom;
