@@ -10,11 +10,46 @@
 @import "partials/colors";
 @import "partials/basics";
 
-#main-header {
+/* #main-header {
   background-image: url('images/header-bkg.jpg');
   background-size: cover;
   #logo {
     background-image: radial-gradient(circle at center,#ffffff 0%,rgba(255,255,255,0) 100%);
+  }
+} */
+#top-header {
+  background-image: url("./images/header-bkg.jpg");
+  background-size: cover;
+  .container {
+    width: 95%;
+    #hvhc-header-right {
+      float: right;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      #hvhc-header-right-widget-wrap {
+        padding-bottom:30px;
+      }
+      .et-cart-info {
+        text-align: right;
+      }
+    }
+  }
+  #et-secondary-menu {
+    width: 100%;
+    padding-top: 10px;
+    background-color: $hvhc-periwinkle;
+    clear: both;
+    display: flex;
+    justify-content: center;
+  }
+
+}
+.et_vertical_nav { // body class
+  #main-header {
+    .container {
+      margin: 0 20px; // instead of 40.
+    }
   }
 }
 

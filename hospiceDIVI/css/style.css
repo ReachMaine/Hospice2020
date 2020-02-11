@@ -18,11 +18,37 @@
       content: url("images/reach-favicon.png");
       padding-right: 4px; }
 
-#main-header {
-  background-image: url("images/header-bkg.jpg");
+/* #main-header {
+  background-image: url('images/header-bkg.jpg');
+  background-size: cover;
+  #logo {
+    background-image: radial-gradient(circle at center,#ffffff 0%,rgba(255,255,255,0) 100%);
+  }
+} */
+#top-header {
+  background-image: url("./images/header-bkg.jpg");
   background-size: cover; }
-  #main-header #logo {
-    background-image: radial-gradient(circle at center, #ffffff 0%, rgba(255, 255, 255, 0) 100%); }
+  #top-header .container {
+    width: 95%; }
+    #top-header .container #hvhc-header-right {
+      float: right;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end; }
+      #top-header .container #hvhc-header-right #hvhc-header-right-widget-wrap {
+        padding-bottom: 30px; }
+      #top-header .container #hvhc-header-right .et-cart-info {
+        text-align: right; }
+  #top-header #et-secondary-menu {
+    width: 100%;
+    padding-top: 10px;
+    background-color: #5272c4;
+    clear: both;
+    display: flex;
+    justify-content: center; }
+
+.et_vertical_nav #main-header .container {
+  margin: 0 20px; }
 
 #footer-bottom #footer-info .reach-customer-copyright {
   float: left; }
