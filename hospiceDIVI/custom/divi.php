@@ -1,4 +1,12 @@
 <?php /* divi */
+
+// add tagline under logo container....
+add_filter ('et_html_logo_container', 'hvhc_tagline');
+function hvhc_tagline ($in_logo_container) {
+  $tagline = '<div class="hvhc-tagline">~ Volunteer Service Since 1980 ~</div>';
+  return $in_logo_container.$tagline;
+
+}
 // add do_shortcode to footer credits
 if ( ! function_exists( 'et_get_footer_credits' ) ) {
   function et_get_footer_credits() {

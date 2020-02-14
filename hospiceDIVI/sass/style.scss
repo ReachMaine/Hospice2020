@@ -27,10 +27,16 @@
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
-      #hvhc-header-right-widget-wrap {
-        padding-bottom:30px;
+      #hvhc-header-right-widget {
+        .hvhc-title {
+            padding-bottom: 0px;
+        }
+        .hvhc-title, .hvhc-addr {
+          color: $hchv-header-font;
+        }
       }
       .et-cart-info {
+        padding-top: 20px;
         text-align: right;
       }
     }
@@ -49,20 +55,31 @@
   #main-header {
     .container {
       margin: 0 20px; // instead of 40.
+      #top-menu-nav {
+        #top-menu {
+          li.hvhc-indent1 {
+            padding-left: 10px;
+          }
+        }
+      }
     }
   }
 }
-
-#footer-bottom {
-  #footer-info {
-    .reach-customer-copyright {
-      float: left;
-    }
-    .reach-branding{
-      float: right;
-      a:before {
-        content: url('images/reach-favicon.png');
-        padding-right: 4px;
+footer { // main-footer
+  background: -moz-linear-gradient(top, rgba(254,255,255,1) 0%, rgba(167,182,219,1) 65%, rgba(167,182,219,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(254,255,255,1) 0%,rgba(167,182,219,1) 65%,rgba(167,182,219,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(254,255,255,1) 0%,rgba(167,182,219,1) 65%,rgba(167,182,219,1) 100%);
+  #footer-bottom {
+    #footer-info {
+      .reach-customer-copyright {
+        float: left;
+      }
+      .reach-branding{
+        float: right;
+        a:before {
+          content: url('images/reach-favicon.png');
+          padding-right: 4px;
+        }
       }
     }
   }
