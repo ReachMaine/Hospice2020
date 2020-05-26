@@ -1,0 +1,149 @@
+
+// custom styles by Reach Maine Marketing use as classes on divi elements
+$rmm-menu-pipes-color: #FFF;
+$rmm-menu-pipes-width: 2px;
+$rmm-menu-search-color: #FFF;
+// **** menu styling *****
+// stack the menu vertically at desktop
+@media (min-width: 980px) {
+  .et_pb_module.et_pb_menu.rmm-menu-vertical {
+    .et_pb_menu__menu {
+      nav.et-menu-nav {
+        ul.et-menu {
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}
+// add pipes between menu items. // #et-top-navigation li:first-child a:before
+.et_pb_module.et_pb_menu.rmm-menu-pipes {
+  .et-menu.nav {
+     /* li.menu-item:not(:last-child) a:after { //:not(:last-child):after
+    content: ' | ';
+    //position: absolute;
+    // right: 7px; // can be adjusted.
+
+    } */
+    // border on right (instead of |)  - need to play with margin & padding of li & a
+    li.menu-item a {
+      padding-bottom: 0px!important;
+    }
+    li.menu-item {
+      margin-bottom: 8px!important;
+    }
+    li.menu-item:not(:last-child) {
+     border-right: $rmm-menu-pipes-width solid $rmm-menu-pipes-color;
+   }
+  }
+}
+.et_pb_module.et_pb_menu.rmm-menu-pipes.rmm-dk-pipes {
+  .et-menu.nav {
+    li.menu-item:not(:last-child) {
+     //border-color: $havens-dkbrown;
+   }
+ }
+}
+// make embedded search form ligth / white
+.et_pb_module.et_pb_menu.rmm-menu-search {
+  .et_pb_menu__search-container {
+    .et_pb_menu__search-form {
+      max-width: 600px;
+      margin: auto;
+      background-color: rgba(255,255,255,0.2); // white transparency
+      padding-left: 4px;
+      .et_pb_menu__search-input {
+        color: $rmm-menu-search-color;
+      }
+      .et_pb_menu__search-input::placeholder {
+        color: $rmm-menu-search-color;
+      }
+    }
+  }
+
+}
+// make hamberger menu light / white
+.et_pb_module.et_pb_menu.rmm-hamburger-light {
+  .et_mobile_nav_menu {
+    .mobile_menu_bar:before {
+      //color: $havens-gold;
+    }
+  }
+}
+@media (min-width: 980px) {
+  .rmm-hamburger-menu .et_pb_menu__menu {
+      display: none;
+  }
+}
+// dont swith to hamberger menu at mobile (used in footer)
+@media (max-width: 980px) {  // mobile & tablet.
+  .et_pb_module.et_pb_menu.rmm-menu-nohamburger {
+    .et_pb_menu__menu {
+      display: flex!important;
+    }
+    .et_mobile_nav_menu {
+      display: none!important;
+    }
+  }
+
+}
+@media (max-width: 479px) {  // mobile
+    .et_pb_column.rmm-mobile-col-nobottom {
+      margin-bottom: 0px!important;
+    }
+
+}
+/* ---------------------------------------------------------------*/
+/* ------Replace the Search Module Button with an Icon by Divi Soup------*/
+/* ---------------------------------------------------------------*/
+
+.et-db #et-boc .et-l .et_pb_search_0_tb_header.rmm-search-icon,
+.et_pb_module.et_pb_search.rmm-search-icon {
+  .et_pb_searchform {
+    /* 1st Hide the search button */
+    input.et_pb_searchsubmit {
+      background: transparent!important;
+      color: transparent!important;
+      border: none;
+      width: 55px;
+      z-index: 2;
+    }
+    // give it some room
+    .input.et_pb_s {
+      padding-right: 55px !important;
+    }
+  } // search form
+  /* 3rd Add the icon as psuedo element  */
+  .et_pb_searchform:before {
+    content: '\55';
+    position: absolute;
+    font-family: 'ETModules';
+    z-index: 1;
+    right: 0;
+    font-size: 20px;
+    padding: 8px 20px;
+  } // before search form
+} // module with class
+/* ---End - Replace the Search Button with an Icon by Divi Soup---*/
+
+@media all and (max-width: 980px) { // nav menu,  woo & footer widgtes
+
+  .rmm-row-stackorder>.et_pb_row,
+  .rmm-row-stackorder  {
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-wrap: wrap; /* Safari 6.1+ */
+		flex-wrap: wrap;
+		.rmm-second-on-mobile {
+			-webkit-order: 2;
+			order: 2;
+		}
+		.rmm-first-on-mobile {
+			-webkit-order: 1;
+			order: 1;
+		}
+	}
+}

@@ -9,6 +9,8 @@
 
 @import "partials/colors";
 @import "partials/basics";
+@import "partials/rmm-styles";
+@import "partials/blog";
 
 /* #main-header {
   background-image: url('images/header-bkg.jpg');
@@ -51,6 +53,7 @@
   }
 
 }
+
 .et_vertical_nav { // body class
   #main-header {
     .container {
@@ -65,6 +68,23 @@
     }
   }
 }
+// sidebar menu on most pages...
+.et_pb_menu.hvhc-menu-vertical { // module
+  .et-menu-nav {
+    .et-menu { // ul
+      li.menu-item {
+        width: 100%;
+      }
+      li.hvhc-menu-cat {
+        font-weight: bold;
+      }
+      li.hvhc-indent1 {
+        padding-left: 20px;
+      }
+    }
+  }
+
+}
 footer { // main-footer
   background: -moz-linear-gradient(top, rgba(254,255,255,1) 0%, rgba(167,182,219,1) 65%, rgba(167,182,219,1) 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(top, rgba(254,255,255,1) 0%,rgba(167,182,219,1) 65%,rgba(167,182,219,1) 100%); /* Chrome10-25,Safari5.1-6 */
@@ -74,7 +94,7 @@ footer { // main-footer
       .reach-customer-copyright {
         float: left;
       }
-      .reach-branding{
+      .reach-branding {
         float: right;
         a:before {
           content: url('images/reach-favicon.png');

@@ -1,17 +1,13 @@
 /* basic css stuff */
+.wp-caption {
+  padding: 0px;
+  background-color: transparent;
+  border: 0px;
+}
 
-#footer-bottom {
-  #footer-info {
-    width: 100%;
-    .reach-customer-copyright {
-      float: left;
-    }
-    .reach-branding{
-      float: right;
-      a:before {
-        content: url('images/reach-favicon.png');
-        padding-right: 4px;
-      }
-    }
+.reach-branding {
+  a:before {
+    content: url('images/reach-favicon.png');
+    padding-right: 4px;
   }
 }
