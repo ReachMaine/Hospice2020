@@ -19,7 +19,13 @@
 
 @media (min-width: 980px) {
   .et_pb_module.et_pb_menu.rmm-menu-vertical .et_pb_menu__menu nav.et-menu-nav ul.et-menu {
-    flex-direction: column; } }
+    flex-direction: column; }
+
+  .et_pb_column.rmm-col-buttom-bottom {
+    display: flex;
+    flex-flow: column nowrap; }
+    .et_pb_column.rmm-col-buttom-bottom .et_pb_button_module_wrapper.et_pb_module {
+      margin-top: auto; } }
 .et_pb_module.et_pb_menu.rmm-menu-pipes .et-menu.nav {
      /* li.menu-item:not(:last-child) a:after { //:not(:last-child):after
     content: ' | ';

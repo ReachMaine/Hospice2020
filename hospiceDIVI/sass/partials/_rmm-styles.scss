@@ -15,6 +15,14 @@ $rmm-menu-search-color: #FFF;
       }
     }
   }
+  // align button to bottom of column
+  .et_pb_column.rmm-col-buttom-bottom {
+    display: flex;
+     flex-flow: column nowrap;
+     .et_pb_button_module_wrapper.et_pb_module{
+       margin-top: auto;
+     }
+  }
 }
 // add pipes between menu items. // #et-top-navigation li:first-child a:before
 .et_pb_module.et_pb_menu.rmm-menu-pipes {
