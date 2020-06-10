@@ -1,0 +1,15 @@
+/* styling for blog post, blog module & blog archive */
+// blog module
+.et_pb_module.rmm-blog-3col.et_pb_posts {
+  article {
+    width: 30%;
+    float: left;
+  }
+  article:not(:nth-child(3n)) {
+      margin-right: 2%;
+    }
+  article:nth-child(3n+1) {
+    clear: both;
+  }
+
+}

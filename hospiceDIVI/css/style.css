@@ -8,15 +8,116 @@
 /* ----------- Colors ---------------------------------- */
 /* ----------- end Colors ----------- */
 /* basic css stuff */
-#footer-bottom #footer-info {
-  width: 100%; }
-  #footer-bottom #footer-info .reach-customer-copyright {
-    float: left; }
-  #footer-bottom #footer-info .reach-branding {
-    float: right; }
-    #footer-bottom #footer-info .reach-branding a:before {
-      content: url("images/reach-favicon.png");
-      padding-right: 4px; }
+.wp-caption {
+  padding: 0px;
+  background-color: transparent;
+  border: 0px; }
+
+.reach-branding a:before {
+  content: url("images/reach-favicon.png");
+  padding-right: 4px; }
+
+@media (min-width: 980px) {
+  .et_pb_module.et_pb_menu.rmm-menu-vertical .et_pb_menu__menu nav.et-menu-nav ul.et-menu {
+    flex-direction: column; }
+
+  .et_pb_column.rmm-col-buttom-bottom {
+    display: flex;
+    flex-flow: column nowrap; }
+    .et_pb_column.rmm-col-buttom-bottom .et_pb_button_module_wrapper.et_pb_module {
+      margin-top: auto; } }
+.et_pb_module.et_pb_menu.rmm-menu-pipes .et-menu.nav {
+     /* li.menu-item:not(:last-child) a:after { //:not(:last-child):after
+    content: ' | ';
+    //position: absolute;
+    // right: 7px; // can be adjusted.
+
+    } */ }
+  .et_pb_module.et_pb_menu.rmm-menu-pipes .et-menu.nav li.menu-item a {
+    padding-bottom: 0px !important; }
+  .et_pb_module.et_pb_menu.rmm-menu-pipes .et-menu.nav li.menu-item {
+    margin-bottom: 8px !important; }
+  .et_pb_module.et_pb_menu.rmm-menu-pipes .et-menu.nav li.menu-item:not(:last-child) {
+    border-right: 2px solid #FFF; }
+
+.et_pb_module.et_pb_menu.rmm-menu-search .et_pb_menu__search-container .et_pb_menu__search-form {
+  max-width: 600px;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding-left: 4px; }
+  .et_pb_module.et_pb_menu.rmm-menu-search .et_pb_menu__search-container .et_pb_menu__search-form .et_pb_menu__search-input {
+    color: #FFF; }
+  .et_pb_module.et_pb_menu.rmm-menu-search .et_pb_menu__search-container .et_pb_menu__search-form .et_pb_menu__search-input::placeholder {
+    color: #FFF; }
+
+@media (min-width: 980px) {
+  .rmm-hamburger-menu .et_pb_menu__menu {
+    display: none; } }
+@media (max-width: 980px) {
+  .et_pb_module.et_pb_menu.rmm-menu-nohamburger .et_pb_menu__menu {
+    display: flex !important; }
+  .et_pb_module.et_pb_menu.rmm-menu-nohamburger .et_mobile_nav_menu {
+    display: none !important; } }
+@media (max-width: 479px) {
+  .et_pb_column.rmm-mobile-col-nobottom {
+    margin-bottom: 0px !important; } }
+/* ---------------------------------------------------------------*/
+/* ------Replace the Search Module Button with an Icon by Divi Soup------*/
+/* ---------------------------------------------------------------*/
+.et-db #et-boc .et-l .et_pb_search_0_tb_header.rmm-search-icon,
+.et_pb_module.et_pb_search.rmm-search-icon {
+  /* 3rd Add the icon as psuedo element  */ }
+  .et-db #et-boc .et-l .et_pb_search_0_tb_header.rmm-search-icon .et_pb_searchform,
+  .et_pb_module.et_pb_search.rmm-search-icon .et_pb_searchform {
+    /* 1st Hide the search button */ }
+    .et-db #et-boc .et-l .et_pb_search_0_tb_header.rmm-search-icon .et_pb_searchform input.et_pb_searchsubmit,
+    .et_pb_module.et_pb_search.rmm-search-icon .et_pb_searchform input.et_pb_searchsubmit {
+      background: transparent !important;
+      color: transparent !important;
+      border: none;
+      width: 55px;
+      z-index: 2; }
+    .et-db #et-boc .et-l .et_pb_search_0_tb_header.rmm-search-icon .et_pb_searchform .input.et_pb_s,
+    .et_pb_module.et_pb_search.rmm-search-icon .et_pb_searchform .input.et_pb_s {
+      padding-right: 55px !important; }
+  .et-db #et-boc .et-l .et_pb_search_0_tb_header.rmm-search-icon .et_pb_searchform:before,
+  .et_pb_module.et_pb_search.rmm-search-icon .et_pb_searchform:before {
+    content: '\55';
+    position: absolute;
+    font-family: 'ETModules';
+    z-index: 1;
+    right: 0;
+    font-size: 20px;
+    padding: 8px 20px; }
+
+/* ---End - Replace the Search Button with an Icon by Divi Soup---*/
+@media all and (max-width: 980px) {
+  .rmm-row-stackorder > .et_pb_row,
+  .rmm-row-stackorder {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    /* Safari 6.1+ */
+    flex-wrap: wrap; }
+    .rmm-row-stackorder > .et_pb_row .rmm-second-on-mobile,
+    .rmm-row-stackorder .rmm-second-on-mobile {
+      -webkit-order: 2;
+      order: 2; }
+    .rmm-row-stackorder > .et_pb_row .rmm-first-on-mobile,
+    .rmm-row-stackorder .rmm-first-on-mobile {
+      -webkit-order: 1;
+      order: 1; } }
+/* styling for blog post, blog module & blog archive */
+.et_pb_module.rmm-blog-3col.et_pb_posts article {
+  width: 30%;
+  float: left; }
+.et_pb_module.rmm-blog-3col.et_pb_posts article:not(:nth-child(3n)) {
+  margin-right: 2%; }
+.et_pb_module.rmm-blog-3col.et_pb_posts article:nth-child(3n+1) {
+  clear: both; }
 
 /* #main-header {
   background-image: url('images/header-bkg.jpg');
@@ -54,6 +155,13 @@
   margin: 0 20px; }
   .et_vertical_nav #main-header .container #top-menu-nav #top-menu li.hvhc-indent1 {
     padding-left: 10px; }
+
+.et_pb_menu.hvhc-menu-vertical .et-menu-nav .et-menu li.menu-item {
+  width: 100%; }
+.et_pb_menu.hvhc-menu-vertical .et-menu-nav .et-menu li.hvhc-menu-cat {
+  font-weight: bold; }
+.et_pb_menu.hvhc-menu-vertical .et-menu-nav .et-menu li.hvhc-indent1 {
+  padding-left: 20px; }
 
 footer {
   background: -moz-linear-gradient(top, #feffff 0%, #a7b6db 65%, #a7b6db 100%);
