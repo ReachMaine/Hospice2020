@@ -119,6 +119,34 @@
 .et_pb_module.rmm-blog-3col.et_pb_posts article:nth-child(3n+1) {
   clear: both; }
 
+/* styling for gravity forms. */
+.gform_wrapper form .gform_body ul.gform_fields li.gfield textarea {
+  background-color: white; }
+.gform_wrapper form .gform_body ul.gform_fields li.gfield.rmm-bottom-close {
+  margin-bottom: 0px; }
+.gform_wrapper form .gform_body ul.gform_fields li.gfield.reach_gf_hide_title label.gfield_label {
+  display: none; }
+.gform_wrapper form .gform_footer {
+  display: flex;
+  justify-content: flex-end; }
+  .gform_wrapper form .gform_footer input[type=submit] {
+    background-color: #5272c4;
+    color: white;
+    padding: 8px 12px;
+    border: 2px solid white; }
+  .gform_wrapper form .gform_footer input[type=submit]:hover {
+    background-color: white;
+    color: #5272c4;
+    border: 2px solid #5272c4; }
+.gform_wrapper form.rmm-gform-grid-lines ul.gform_fields li.gfmc-column {
+  text-align: center; }
+  .gform_wrapper form.rmm-gform-grid-lines ul.gform_fields li.gfmc-column ul {
+    margin-top: 0px; }
+    .gform_wrapper form.rmm-gform-grid-lines ul.gform_fields li.gfmc-column ul .gfield {
+      margin-top: 0px; }
+    .gform_wrapper form.rmm-gform-grid-lines ul.gform_fields li.gfmc-column ul .gfield_checkbox label {
+      width: 100%; }
+
 /* #main-header {
   background-image: url('images/header-bkg.jpg');
   background-size: cover;

@@ -1,25 +1,62 @@
-/* gravity forms styling */
+/* styling for gravity forms. */
 .gform_wrapper {
-	.gfield.hide-label label {
-		display: none;
-	}
-	.gform_footer {
+  form {
+    .gform_heading {
 
-		input[type=submit] { //  Make submit look like buttons on the site.
-			float: right;
-			color: $button-color;
-			border: 3px solid $iec-lime!important;
-		    padding: 6px 20px;
-		    border-width: 0px;
-		    font-size: 20px!important;
-		    text-align: center;
-		    cursor: pointer;
-			background-color: $button-bkg;
-			//line-height: 1.7em;
-			}
-			input[type=submit]:hover {
-				background-color: $button-hover-bkg;
-				color: $button-hover-color;
-			}
-	} // gform footer
-} // gform wrapper
+    }
+    .gform_body {
+      ul.gform_fields {
+        li.gfield {
+          textarea {
+            background-color: white;
+          }
+        }
+        li.gfield.rmm-bottom-close {
+          margin-bottom: 0px;
+        }
+
+        li.gfield.reach_gf_hide_title {
+          label.gfield_label {
+            display: none;
+          }
+        }
+      }
+    } // gform_body
+
+    .gform_footer {
+      display: flex;
+      justify-content: flex-end; // put button on right
+      input[type=submit] {
+        background-color: $hospice-content-link;
+				color: white;
+				padding: 8px 12px;
+				border: 2px solid white; // s.t. doesnt wiggle on hover
+
+      }
+      input[type=submit]:hover {
+        background-color: white;
+        color: $hospice-content-link;
+        border: 2px solid $hospice-content-link;
+
+      }
+    } // gform_footer
+
+  } // form
+  form.rmm-gform-grid-lines {
+      ul.gform_fields {
+        li.gfmc-column {
+          text-align: center;
+          ul {
+            margin-top: 0px;
+            .gfield {
+              margin-top: 0px;
+            }
+            .gfield_checkbox label {
+                width: 100%;
+            }
+          }
+
+        }
+      }
+  }
+}
