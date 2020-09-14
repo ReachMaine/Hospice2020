@@ -147,6 +147,12 @@
     .gform_wrapper form.rmm-gform-grid-lines ul.gform_fields li.gfmc-column ul .gfield_checkbox label {
       width: 100%; }
 
+/* styling for tribe events & shortcode */
+ul.ecs-event-list li.ecs-event {
+  padding-bottom: 10px; }
+  ul.ecs-event-list li.ecs-event .entry-title {
+    padding-bottom: 0px; }
+
 /* #main-header {
   background-image: url('images/header-bkg.jpg');
   background-size: cover;

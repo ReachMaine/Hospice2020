@@ -1,0 +1,11 @@
+/* styling for tribe events & shortcode */
+
+// shortcode
+ul.ecs-event-list {
+  li.ecs-event {
+    padding-bottom: 10px;
+    .entry-title {
+      padding-bottom: 0px;
+    }
+  }
+}
