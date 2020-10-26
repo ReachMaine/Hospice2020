@@ -17,6 +17,9 @@
   content: url("images/reach-favicon.png");
   padding-right: 4px; }
 
+.mfp-gallery .mfp-title {
+  display: none; }
+
 @media (min-width: 980px) {
   .et_pb_module.et_pb_menu.rmm-menu-vertical .et_pb_menu__menu nav.et-menu-nav ul.et-menu {
     flex-direction: column; }
