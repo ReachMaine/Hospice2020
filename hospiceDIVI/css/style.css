@@ -157,6 +157,12 @@ ul.ecs-event-list li.ecs-event {
   ul.ecs-event-list li.ecs-event .entry-title {
     padding-bottom: 0px; }
 
+/* styling lists within  */
+.tribe-common ul.tribe-events-c-view-selector__list,
+.tribe-common ul.tribe-events-c-top-bar__nav-list,
+.tribe-common ul {
+  list-style: none; }
+
 /* #main-header {
   background-image: url('images/header-bkg.jpg');
   background-size: cover;

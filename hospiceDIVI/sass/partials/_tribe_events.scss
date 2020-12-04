@@ -9,3 +9,12 @@ ul.ecs-event-list {
     }
   }
 }
+
+/* styling lists within  */
+.tribe-common {
+  ul.tribe-events-c-view-selector__list,
+  ul.tribe-events-c-top-bar__nav-list,
+  ul {
+    list-style: none;
+  }
+}
