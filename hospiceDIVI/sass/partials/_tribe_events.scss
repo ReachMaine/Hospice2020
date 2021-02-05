@@ -18,3 +18,28 @@ ul.ecs-event-list {
     list-style: none;
   }
 }
+
+// calendar display on /events-calendar page (via shortcode).
+.tribe-theme-divi.tribe-theme-child-hospicedivi {
+  .tribe-common-l-container.tribe-events-l-container {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    .tribe-events-c-ical{
+      display: none;
+    }
+  }
+}
+
+// single event
+// hide the export buttons....
+.tribe-events-gcal.tribe-events-button {
+    display: none;
+}
+.tribe-events-ical.tribe-events-button {
+    display: none;
+}
+.ecs-event {
+  article {
+    
+  }
+}

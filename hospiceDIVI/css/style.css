@@ -163,6 +163,18 @@ ul.ecs-event-list li.ecs-event {
 .tribe-common ul {
   list-style: none; }
 
+.tribe-theme-divi.tribe-theme-child-hospicedivi .tribe-common-l-container.tribe-events-l-container {
+  padding-top: 0px;
+  padding-bottom: 0px; }
+  .tribe-theme-divi.tribe-theme-child-hospicedivi .tribe-common-l-container.tribe-events-l-container .tribe-events-c-ical {
+    display: none; }
+
+.tribe-events-gcal.tribe-events-button {
+  display: none; }
+
+.tribe-events-ical.tribe-events-button {
+  display: none; }
+
 /* #main-header {
   background-image: url('images/header-bkg.jpg');
   background-size: cover;
