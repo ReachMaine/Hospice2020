@@ -155,3 +155,32 @@ $rmm-menu-search-color: #FFF;
 		}
 	}
 }
+
+/**** menu styling ***** */
+
+/* MENU classes
+  spread out menu items
+  rmm-menu-spread
+*/
+.et_pb_module.et_pb_menu.rmm-menu-spread {
+   .et_pb_menu__menu {
+     width:100%;
+     nav.et-menu-nav {
+       width: 100%;
+       justify-content: center;
+       ul.et-menu {
+         width: 100%;
+         justify-content: space-between;
+         li {
+           padding-left: 0px;
+           padding-right: 0px;
+         }
+       }
+     }
+   }
+ }
+ .et_pb_module.et_pb_menu.rmm-menu-allign-right {
+  .et_pb_menu__wrap {
+    justify-content: flex-end!important;
+  }
+}
