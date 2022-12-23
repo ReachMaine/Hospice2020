@@ -179,7 +179,9 @@ $rmm-menu-search-color: #FFF;
      }
    }
  }
+ // .et_pb_menu .et_pb_menu__menu>nav>ul
  .et_pb_module.et_pb_menu.rmm-menu-allign-right {
+ .et_pb_menu__menu>nav>ul ,
   .et_pb_menu__wrap {
     justify-content: flex-end!important;
   }
