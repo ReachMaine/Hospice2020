@@ -94,6 +94,12 @@ $rmm-menu-search-color: #FFF;
     }
   }
 
+  .et_pb_module.et_pb_menu.rmm-mobile-vstack {
+    .et_pb_menu__menu>nav>ul  {
+      flex-direction: column;
+    }
+  }
+
 }
 @media (max-width: 479px) {  // mobile
     .et_pb_column.rmm-mobile-col-nobottom {

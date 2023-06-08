@@ -60,10 +60,7 @@
   .et_pb_module.et_pb_menu.rmm-menu-nohamburger .et_pb_menu__menu {
     display: flex !important; }
   .et_pb_module.et_pb_menu.rmm-menu-nohamburger .et_mobile_nav_menu {
-    display: none !important; }
-
-  .et_pb_module.et_pb_menu.rmm-mobile-vstack .et_pb_menu__menu > nav > ul {
-    flex-direction: column; } }
+    display: none !important; } }
 @media (max-width: 479px) {
   .et_pb_column.rmm-mobile-col-nobottom {
     margin-bottom: 0px !important; } }
@@ -133,8 +130,7 @@
         padding-left: 0px;
         padding-right: 0px; }
 
-.et_pb_module.et_pb_menu.rmm-menu-allign-right .et_pb_menu__menu > nav > ul,
-.et_pb_module.et_pb_menu.rmm-menu-allign-right .et_pb_menu__wrap {
+.et_pb_module.et_pb_menu.rmm-menu-allign-right .et_pb_menu__menu {
   justify-content: flex-end !important; }
 
 /* styling for blog post, blog module & blog archive */
